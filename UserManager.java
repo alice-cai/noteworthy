@@ -11,7 +11,24 @@ public class UserManager {
 	private ArrayList<String> usernameList;
 
 	public UserManager() {
+		if (!checkFileExists()) {
+			createNewFile();
+		}
+		
 		createByFileInput();
+	}
+	
+	private boolean checkFileExists () {
+		File file = new File(FILE_NAME);
+		return file.exists();
+	}
+
+	private void createNewFile () {
+		try {
+			BufferedWriter out = new BufferedWriter(new FileWriter(FILE_NAME));
+			out.write('0');
+			out.close();
+		} catch (IOException iox) {}
 	}
 
 	private void createByFileInput() {
