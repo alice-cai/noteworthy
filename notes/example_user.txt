@@ -1,0 +1,20 @@
+3
+
+grocery list
+6
+- bread
+- muffins
+- brown rice
+- yogurt
+- broccoli
+- cherries
+
+to-do list
+3
+- clean out garage
+- book appointment w/ Dr. Clarke
+- call John about car rental
+
+Karen's new address
+1
+64 Main Street
