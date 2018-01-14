@@ -9,6 +9,7 @@ import java.util.function.Consumer;
 
 public class LoginPanel extends JPanel {
 	private static final String BANNER_IMAGE_FILE = "images/banner.png";
+	private static final Color BACKGROUND_COLOR = new Color(237, 237, 237);
 
 	private SpringLayout layout;
 
@@ -32,6 +33,7 @@ public class LoginPanel extends JPanel {
 
 	public LoginPanel (UserManager userManager, BackButtonHandler backButtonHandler, Consumer<User> onUserLogin /* call this method when user logs in */) {
 		this.userManager = userManager;
+		this.setBackground(BACKGROUND_COLOR);
 
 		layout = new SpringLayout();
 		setLayout(layout);
