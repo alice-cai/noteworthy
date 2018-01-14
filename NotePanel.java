@@ -11,6 +11,7 @@ import java.util.ArrayDeque;
 
 public class NotePanel extends JPanel {
 	private static final int TITLE_MAX_LENGTH = 25;
+	private static final Color BACKGROUND_COLOR = new Color(237, 237, 237);
 
 	private SpringLayout layout;
 
@@ -39,6 +40,7 @@ public class NotePanel extends JPanel {
 		this.noteManager = noteManager;
 		this.backButtonHandler = backButtonHandler;
 		this.onNoteListUpdate = onNoteListUpdate;
+		this.setBackground(BACKGROUND_COLOR);
 
 		layout = new SpringLayout();
 		setLayout(layout);
