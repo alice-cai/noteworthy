@@ -15,6 +15,7 @@ public class NoteMenuPanel extends JPanel {
 	private static final String NOTE_PANEL = "card that allows user to view or edit existing note";
 	private static final int NOTE_LIMIT = 12;
 	private static final String IMAGE_FILE = "images/no_notes.png";
+	private static final Color BACKGROUND_COLOR = new Color(237, 237, 237);
 
 	private SpringLayout layout;
 
@@ -41,6 +42,7 @@ public class NoteMenuPanel extends JPanel {
 		this.cardLayout = cardLayout;
 		this.history = history;
 		this.backButtonHandler = backButtonHandler;
+		this.setBackground(BACKGROUND_COLOR);
 		noteManager = new NoteManager(user);
 
 		buttonFont = new Font("Arial", Font.BOLD, 35);
