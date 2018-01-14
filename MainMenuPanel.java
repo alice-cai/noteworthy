@@ -12,6 +12,7 @@ public class MainMenuPanel extends JPanel{
 	private static final String REGIS_PANEL = "card with registration screen";
 	private static final String MAIN_MENU_PANEL = "card with main menu";
 	private static final String MAIN_IMAGE_FILE = "images/main.png";
+	private static final Color BACKGROUND_COLOR = new Color(237, 237, 237);
 
 	private SpringLayout layout;
 
@@ -30,6 +31,7 @@ public class MainMenuPanel extends JPanel{
 		this.cards = cards;
 		this.cardLayout = cardLayout;
 		this.history = history;
+		this.setBackground(BACKGROUND_COLOR);
 
 		buttonFont = new Font("Arial", Font.BOLD, 50);
 
